@@ -1,0 +1,284 @@
+{
+  "lastUpdated": "2026-07-17",
+  "daily": [
+    {
+      "date": "2026-06-17",
+      "repos": 328270,
+      "users": 224622,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": null,
+      "userGrowthRate": null
+    },
+    {
+      "date": "2026-06-18",
+      "repos": 309033,
+      "users": 221878,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -5.86,
+      "userGrowthRate": -1.22
+    },
+    {
+      "date": "2026-06-19",
+      "repos": 309557,
+      "users": 202955,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 0.17,
+      "userGrowthRate": -8.53
+    },
+    {
+      "date": "2026-06-20",
+      "repos": 272763,
+      "users": 165264,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -11.89,
+      "userGrowthRate": -18.57
+    },
+    {
+      "date": "2026-06-21",
+      "repos": 262058,
+      "users": 167591,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -3.92,
+      "userGrowthRate": 1.41
+    },
+    {
+      "date": "2026-06-22",
+      "repos": 354819,
+      "users": 222323,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 35.4,
+      "userGrowthRate": 32.66
+    },
+    {
+      "date": "2026-06-23",
+      "repos": 340502,
+      "users": 221118,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -4.04,
+      "userGrowthRate": -0.54
+    },
+    {
+      "date": "2026-06-24",
+      "repos": 338613,
+      "users": 215047,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -0.55,
+      "userGrowthRate": -2.75
+    },
+    {
+      "date": "2026-06-25",
+      "repos": 308710,
+      "users": 207792,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -8.83,
+      "userGrowthRate": -3.37
+    },
+    {
+      "date": "2026-06-26",
+      "repos": 318285,
+      "users": 198435,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 3.1,
+      "userGrowthRate": -4.5
+    },
+    {
+      "date": "2026-06-27",
+      "repos": 234917,
+      "users": 174680,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -26.19,
+      "userGrowthRate": -11.97
+    },
+    {
+      "date": "2026-06-28",
+      "repos": 286298,
+      "users": 177260,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 21.87,
+      "userGrowthRate": 1.48
+    },
+    {
+      "date": "2026-06-29",
+      "repos": 315848,
+      "users": 228974,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 10.32,
+      "userGrowthRate": 29.17
+    },
+    {
+      "date": "2026-06-30",
+      "repos": 308592,
+      "users": 277978,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -2.3,
+      "userGrowthRate": 21.4
+    },
+    {
+      "date": "2026-07-01",
+      "repos": 301052,
+      "users": 284940,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -2.44,
+      "userGrowthRate": 2.5
+    },
+    {
+      "date": "2026-07-02",
+      "repos": 326755,
+      "users": 252454,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 8.54,
+      "userGrowthRate": -11.4
+    },
+    {
+      "date": "2026-07-03",
+      "repos": 329400,
+      "users": 231229,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 0.81,
+      "userGrowthRate": -8.41
+    },
+    {
+      "date": "2026-07-04",
+      "repos": 265330,
+      "users": 211365,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -19.45,
+      "userGrowthRate": -8.59
+    },
+    {
+      "date": "2026-07-05",
+      "repos": 272398,
+      "users": 229356,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 2.66,
+      "userGrowthRate": 8.51
+    },
+    {
+      "date": "2026-07-06",
+      "repos": 356047,
+      "users": 271172,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 30.71,
+      "userGrowthRate": 18.23
+    },
+    {
+      "date": "2026-07-07",
+      "repos": 444324,
+      "users": 272929,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 24.79,
+      "userGrowthRate": 0.65
+    },
+    {
+      "date": "2026-07-08",
+      "repos": 564450,
+      "users": 281530,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 27.04,
+      "userGrowthRate": 3.15
+    },
+    {
+      "date": "2026-07-09",
+      "repos": 564609,
+      "users": 265327,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 0.03,
+      "userGrowthRate": -5.76
+    },
+    {
+      "date": "2026-07-10",
+      "repos": 315637,
+      "users": 263445,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -44.1,
+      "userGrowthRate": -0.71
+    },
+    {
+      "date": "2026-07-11",
+      "repos": 258261,
+      "users": 221237,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -18.18,
+      "userGrowthRate": -16.02
+    },
+    {
+      "date": "2026-07-12",
+      "repos": 249104,
+      "users": 218405,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -3.55,
+      "userGrowthRate": -1.28
+    },
+    {
+      "date": "2026-07-13",
+      "repos": 310039,
+      "users": 263185,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 24.46,
+      "userGrowthRate": 20.5
+    },
+    {
+      "date": "2026-07-14",
+      "repos": 311278,
+      "users": 264243,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 0.4,
+      "userGrowthRate": 0.4
+    },
+    {
+      "date": "2026-07-15",
+      "repos": 317733,
+      "users": 241445,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 2.07,
+      "userGrowthRate": -8.63
+    },
+    {
+      "date": "2026-07-16",
+      "repos": 316698,
+      "users": 252334,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -0.33,
+      "userGrowthRate": 4.51
+    },
+    {
+      "date": "2026-07-17",
+      "repos": 99509,
+      "users": 64277,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": -68.58,
+      "userGrowthRate": -74.53
+    }
+  ]
+}
