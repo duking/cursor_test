@@ -273,12 +273,12 @@
     },
     {
       "date": "2026-07-17",
-      "repos": 100322,
-      "users": 64455,
+      "repos": 116442,
+      "users": 72555,
       "repoIncomplete": false,
       "userIncomplete": false,
-      "repoGrowthRate": -68.32,
-      "userGrowthRate": -74.46
+      "repoGrowthRate": -63.23,
+      "userGrowthRate": -71.25
     }
   ]
 }
