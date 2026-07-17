@@ -8,6 +8,7 @@
 - 每日统计 GitHub 公开新建用户数量
 - 计算日环比 / 周环比增长率
 - 支持按日 / 按周切换查看
+- 默认展示近 **2 年**数据，可选 30 天 / 90 天 / 6 个月 / 1 年 / 2 年 / 全部
 - 可视化趋势图与数据表格
 - GitHub Actions 每日自动采集并更新数据
 
@@ -15,7 +16,7 @@
 
 ```bash
 npm install
-npm run collect:backfill   # 回填最近 30 天数据（受 API 速率限制，约需 3-6 分钟）
+npm run collect:backfill   # 回填最近 730 天数据（受 API 速率限制，认证后约 20 分钟）
 npm run dev                # 启动开发服务器
 npm run build              # 构建静态站点
 ```

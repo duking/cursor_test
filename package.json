@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "collect": "node scripts/collect-stats.mjs",
-    "collect:backfill": "node scripts/collect-stats.mjs --backfill 30"
+    "collect:backfill": "node scripts/collect-stats.mjs --backfill 730"
   },
   "dependencies": {
     "next": "^15.1.0",

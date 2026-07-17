@@ -1,5 +1,18 @@
 export type TimeDimension = "day" | "week";
 
+export type TimeRange = "30d" | "90d" | "180d" | "365d" | "730d" | "all";
+
+export const TIME_RANGE_OPTIONS: { value: TimeRange; label: string; days: number | null }[] = [
+  { value: "30d", label: "近 30 天", days: 30 },
+  { value: "90d", label: "近 90 天", days: 90 },
+  { value: "180d", label: "近 6 个月", days: 180 },
+  { value: "365d", label: "近 1 年", days: 365 },
+  { value: "730d", label: "近 2 年", days: 730 },
+  { value: "all", label: "全部", days: null },
+];
+
+export const DEFAULT_TIME_RANGE: TimeRange = "730d";
+
 export interface DailyStat {
   date: string;
   repos: number;
@@ -148,6 +161,44 @@ export function aggregateWeekly(daily: DailyStat[]): PeriodStat[] {
 
 export function getPeriodStats(daily: DailyStat[], dimension: TimeDimension): PeriodStat[] {
   return dimension === "week" ? aggregateWeekly(daily) : dailyToPeriodStats(daily);
+}
+
+export function filterDailyByRange(daily: DailyStat[], range: TimeRange): DailyStat[] {
+  const sorted = [...daily].sort((a, b) => a.date.localeCompare(b.date));
+  if (!sorted.length) return [];
+
+  const option = TIME_RANGE_OPTIONS.find((item) => item.value === range);
+  if (!option?.days) return sorted;
+
+  const latest = parseDate(sorted.at(-1)!.date);
+  const cutoff = addDays(latest, -(option.days - 1));
+
+  return sorted.filter((entry) => parseDate(entry.date) >= cutoff);
+}
+
+export function getRangeLabel(range: TimeRange, daily: DailyStat[]): string {
+  const filtered = filterDailyByRange(daily, range);
+  if (!filtered.length) return "无数据";
+
+  const start = filtered[0].date;
+  const end = filtered.at(-1)!.date;
+  if (start === end) return start;
+  return `${start} ~ ${end}`;
+}
+
+export function getChartTickLabel(date: string, totalPoints: number): string {
+  if (totalPoints > 180) return date.slice(2, 7);
+  if (totalPoints > 60) return date.slice(5);
+  return date.slice(5);
+}
+
+export function getChartTickInterval(totalPoints: number): number | "preserveStartEnd" {
+  if (totalPoints <= 14) return 0;
+  if (totalPoints <= 31) return 2;
+  if (totalPoints <= 90) return 6;
+  if (totalPoints <= 180) return 14;
+  if (totalPoints <= 365) return 30;
+  return Math.max(Math.floor(totalPoints / 12), 30);
 }
 
 export function getSummary(daily: DailyStat[]) {

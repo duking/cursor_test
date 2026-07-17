@@ -1,0 +1,41 @@
+name: Backfill GitHub Stats
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "回填天数"
+        required: false
+        default: "730"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Backfill historical stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/collect-stats.mjs --backfill ${{ inputs.days }}
+
+      - name: Commit backfilled stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/stats.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: backfill GitHub stats (${{ inputs.days }} days)"
+            git push
+          fi

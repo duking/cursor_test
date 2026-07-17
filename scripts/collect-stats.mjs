@@ -155,6 +155,7 @@ async function main() {
 
   console.log(`Collecting ${dates.length} day(s)...`);
 
+  let collected = 0;
   for (const date of dates) {
     try {
       const entry = await collectForDate(date);
@@ -164,7 +165,15 @@ async function main() {
       } else {
         stats.daily.push(entry);
       }
+      collected += 1;
       console.log(`  ${date}: repos=${entry.repos}, users=${entry.users}`);
+
+      if (collected % 10 === 0 || date === dates[dates.length - 1]) {
+        stats.daily = computeGrowthRates(stats.daily);
+        stats.lastUpdated = formatDate(new Date());
+        saveStats(stats);
+        console.log(`  checkpoint saved (${stats.daily.length} days total)`);
+      }
     } catch (error) {
       console.error(`  ${date}: failed - ${error.message}`);
     }
@@ -177,7 +186,7 @@ async function main() {
   stats.daily = computeGrowthRates(stats.daily);
   stats.lastUpdated = formatDate(new Date());
   saveStats(stats);
-  console.log(`Saved to ${DATA_PATH}`);
+  console.log(`Saved to ${DATA_PATH} (${stats.daily.length} days total)`);
 }
 
 main().catch((error) => {
