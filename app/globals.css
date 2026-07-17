@@ -43,6 +43,44 @@ a {
   margin-bottom: 28px;
 }
 
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dimension-switch {
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--panel-border);
+}
+
+.dimension-btn {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.dimension-btn:hover {
+  color: var(--text);
+}
+
+.dimension-btn.active {
+  background: rgba(88, 166, 255, 0.18);
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px rgba(88, 166, 255, 0.35);
+}
+
 .eyebrow {
   color: var(--accent-growth);
   font-size: 12px;
