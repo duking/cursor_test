@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23",
+  "lastUpdated": "2026-09-24",
   "daily": [
     {
       "date": "2026-06-17",
@@ -891,6 +891,15 @@
       "userIncomplete": false,
       "repoGrowthRate": 52.82,
       "userGrowthRate": 2.81
+    },
+    {
+      "date": "2026-09-24",
+      "repos": 188474,
+      "users": 44560,
+      "repoIncomplete": false,
+      "userIncomplete": false,
+      "repoGrowthRate": 31.03,
+      "userGrowthRate": 0.9
     }
   ]
 }
